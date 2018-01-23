@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Roboto+Condensed');
+
+body {
+  background-color: orange;
+}
+
+#box {
+  border-radius : 100%;
+  height : 30rem;
+  display: border-box;
+  width: 30rem;
+  background-color: silver;
+  margin-top: 5%;
+  margin-left: 30%;
+}
+
+#red {
+  height: 15rem;
+  width: 15rem;
+  background-color: rgba(214, 0, 0, 1);
+  border-radius: 0 15rem 0 0;
+  margin-left: 15rem;
+  box-sizing: border-box;
+  border :12px solid;
+}
+
+#blue {
+  height: 15rem;
+  width: 15rem;
+  background-color: rgba(10, 6, 220, 1);
+  border-radius: 0 0 15rem 0;
+  margin-left: 15rem;
+  box-sizing: border-box;
+  border :12px solid;
+}
+
+#yellow {
+  height: 15rem;
+  width: 15rem;
+  background-color: rgba(255, 230, 0, 1);
+  border-radius:15rem 0 0 0;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 30%;
+  left: 0.2rem;
+  top: 0rem;
+  box-sizing: border-box;
+  border :12px solid;
+}
+
+#green {
+  height: 15rem;
+  width: 15rem;
+  background-color: rgba(0, 210, 0, 1);
+  border-radius:0 0 0 15rem;
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 5%;
+  left: 0.2rem;
+  top: 15rem;
+  box-sizing: border-box;
+  border :12px solid;
+}
+
+#center {
+  z-index: 100;
+  background-color: rgba(250, 250, 250, 1);
+  height: 15rem;
+  width: 15rem;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 5%;
+  top: 7.5rem;
+  left: 8rem;
+  box-sizing: border-box;
+  border: solid 1rem;
+  text-align: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+  bottom: -5px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  background-color: rgb(210, 0, 0, 0.9);
+  border: solid 1px;
+  border-radius:2px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 0.9rem;
+  width: 0.9rem;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgba(0, 20, 0, 1);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgba(10, 230, 50, 1);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgba(10, 230, 50, 1);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.check {
+  width: 7rem;
+  height: 1.5rem;
+  font-size: 0.9rem;
+  position: relative;
+  left: 3rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 1.2;
+}
+
+#mid1 {
+  display: flex;
+  height: 4rem;
+}
+
+#mid2{
+  font-size: 0.7rem;
+}
+
+.strict-label{
+  position: relative;
+  left: 2.4rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.start-label {
+  position: relative;
+  left: 1.5rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.count-label {
+  font-family: 'Roboto Condensed', sans-serif;
+  position: relative;
+  left : -0.9rem;
+}
+
+
+#display {
+  background-color: rgba(70, 0, 0, 1);
+  width: 5rem;
+  height: 2rem;
+  position: relative;
+  border-radius: 10px;
+  position:relative;
+  left: 0.5rem;
+  padding-top: 1rem;
+  text-align: center;
+  color: rgba(255, 0, 0, 1);
+  border: solid 2px black;
+}
+
+#start{
+  height : 1.4rem;
+  width: 1.4rem;
+  border-radius: 100%;
+  background: green;
+  position: relative;
+  top: 1.8rem;
+  left: 30px;
+  border: 3px solid rgba(10, 10, 10, 0.8);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+}
+
+#strict{
+  height : 1.4rem;
+  width: 1.4rem;
+  border-radius: 100%;
+  background: yellow;
+  position: relative;
+  top: 1.8rem;
+  left: 50px;
+  border: 3px solid rgba(10, 10, 10, 0.8);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+}
+
+#center h1 {
+  position: relative;
+  font-family: 'Courgette', cursive;
+  top: .9rem;
+  font-style: 'cursive';
+}
+
+.blink span{
+  animation: blinker 1s step-start 2;
+}
+
+.class-blink {
+  transform: translate(20px);
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}

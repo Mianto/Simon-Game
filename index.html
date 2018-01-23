@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="box">
+  <div id="red"></div>
+  <div id="blue"></div>
+  <div id="center">
+    <h1>Simon Game</h1>
+    <div id="mid1">
+      <div id="display"></div>
+      <div id="start"></div>
+      <div id="strict"></div>
+    </div>
+    <div id="mid2">
+      <span class="count-label">COUNT</span>
+      <span class="start-label">START</span>
+      <span class="strict-label">STRICT</span>
+    </div>
+    <div class="check">
+      <span "hint">OFF<span>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      <span class="hint">ON</span>
+    </div>
+  </div>
+  <div id="yellow"></div>
+  <div id="green"></div>
+</div>
+<audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" class="red"></audio>
+<audio src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" class="blue"></audio>
+<audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" class="yellow"></audio>
+<audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" class="green"></audio>
+
+
+<script src="index.js" charset="utf-8"></script>
+</body>
+</html>
