@@ -12,32 +12,35 @@ body {
   background-color: silver;
   margin-top: 5%;
   margin-left: 30%;
+  transition: 0.5s;
 }
 
 #red {
   height: 15rem;
   width: 15rem;
-  background-color: rgba(214, 0, 0, 1);
+  background-color: rgba(160, 0, 0, 1);
   border-radius: 0 15rem 0 0;
   margin-left: 15rem;
   box-sizing: border-box;
   border :12px solid;
+  transition: 0.5s;
 }
 
 #blue {
   height: 15rem;
   width: 15rem;
-  background-color: rgba(10, 6, 220, 1);
+  background-color: rgba(0, 0, 140, 1);
   border-radius: 0 0 15rem 0;
   margin-left: 15rem;
   box-sizing: border-box;
   border :12px solid;
+  transition-duration: 0.5s;
 }
 
 #yellow {
   height: 15rem;
   width: 15rem;
-  background-color: rgba(255, 230, 0, 1);
+  background-color: rgba(200, 160, 0, 1);
   border-radius:15rem 0 0 0;
   position: absolute;
   margin-top: 5%;
@@ -46,12 +49,13 @@ body {
   top: 0rem;
   box-sizing: border-box;
   border :12px solid;
+  transition-duration: 0.5s;
 }
 
 #green {
   height: 15rem;
   width: 15rem;
-  background-color: rgba(0, 210, 0, 1);
+  background-color: rgba(0, 160, 0, 1);
   border-radius:0 0 0 15rem;
   position: absolute;
   margin-left: 30%;
@@ -60,6 +64,7 @@ body {
   top: 15rem;
   box-sizing: border-box;
   border :12px solid;
+  transition-duration: 0.5s
 }
 
 #center {
@@ -188,19 +193,52 @@ input:checked + .slider:before {
   top: 1.8rem;
   left: 30px;
   border: 3px solid rgba(10, 10, 10, 0.8);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+#start:hover {
+  background-color: #3e8e41
+}
+
+#start:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 #strict{
   height : 1.4rem;
   width: 1.4rem;
   border-radius: 100%;
-  background: yellow;
+  background: rgba(235, 235, 0, 1);
   position: relative;
   top: 1.8rem;
   left: 50px;
   border: 3px solid rgba(10, 10, 10, 0.8);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+#strict:active {
+  background-color: rgba(255, 255, 0, 1);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#strict-light {
+  height: 7px;
+  width: 7px;
+  border-radius: 100%;
+  background-color: lightgray;
+  position: relative;
+  top: 1rem;
+  left: 32px;
+  border: solid 1px;
 }
 
 #center h1 {
@@ -212,10 +250,6 @@ input:checked + .slider:before {
 
 .blink span{
   animation: blinker 1s step-start 2;
-}
-
-.class-blink {
-  transform: translate(20px);
 }
 
 @keyframes blinker {
